@@ -11,6 +11,8 @@
 
 
 class Shirt
+  attr_reader :brand, :size, :color
+  attr_writer :brand, :size, :color
   def initialize(input_brand, input_size, input_color)
     @brand = input_brand
     @size = input_size
@@ -18,9 +20,16 @@ class Shirt
   end
 
   def print_info
-    p "#{@brand} #{@input} #{@color}"
+    p "#{@brand} #{@size} #{@color}"
   end
 
 end
 
-p Shirt.new("Nike", "Medium", "Red")
+shirt1 = Shirt.new("Nike", "Medium", "Red")
+
+
+shirt1.print_info
+shirt1.brand = "Adidas"
+shirt1.print_info
+
+
