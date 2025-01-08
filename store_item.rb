@@ -31,5 +31,3 @@ shirt1 = Shirt.new("Nike", "Medium", "Red")
 shirt1.print_info
 shirt1.brand = "Adidas"
 shirt1.print_info
-
-
