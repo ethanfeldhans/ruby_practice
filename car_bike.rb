@@ -29,4 +29,8 @@ class Bike < Vehicle
   end
 end
 
+bike = Bike.new
+bike.ring_bell
 
+car = Car.new
+car.honk_horn
